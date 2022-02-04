@@ -6,7 +6,9 @@ var nota1 = Number(parseInt(prompt("Qual nota você tirou no primeiro trimestre?
 var nota2 = Number(parseInt(prompt("Qual nota você tirou no segundo trimestre?")));
 var nota3 = Number(parseInt(prompt("Qual nota você tirou no terceiro trimestre?")));
 
-var soma = ((nota1 + nota2 + nota3) /3).toFixed();
+var soma = ((nota1 + nota2 + nota3) /3).toFixed();/*O valor padrão é 0. Então se você não passar nenhum número essa função vai retornar apenas a parte inteira.
+
+1.22.toFixed() //1 */
 
 if (soma < 5) {
   mostra(`Sua nota foi de ${soma} e por isso você reprovou`);
