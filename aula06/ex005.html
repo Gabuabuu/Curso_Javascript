@@ -19,10 +19,16 @@
     <h1>Iniciando o DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
-    <div>Clique em mim</div>
+    <div name="msg">Clique em mim</div>
     
     <script>
-      
+   var p1 =  document.getElementsByTagName('p') [1];
+    document.write(p1.innerHTML); //innerText = pega todo o texto, mas sem as tag filhas (ex: <strong>)//innerHTML, pega todo o texto, incluindo tags filhas (ex: <strong>).
+    /*var d = document.getElementById('msg');
+    d.style.background = 'green'
+    d.innerText = 'aqui'*/
+    var d = document.getElementsByName('msg')[0]
+    d.innerText = 'Olá, bem vindo'
     </script>
 </body>
     
