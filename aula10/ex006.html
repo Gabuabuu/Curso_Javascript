@@ -18,15 +18,33 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()"> <!-- Event DOM: When i put the event 'onclick' i having call a event of click. For that, i need put this event in js world(REMEMBER: Use id, class or name); -->
+    <div id="area"> <!-- Event DOM: When i put the event 'onclick' i having call a event of click. For that, i need put this event in js world(REMEMBER: Use id, class or name); -->
         Interaja...
     </div>
 
     <script>
+         var a = document.getElementById('area'); //When using 'querySelector()' and if I use a div with id, I need to put it inside the parentheses '()' of the querySelector, if div(div#name), if class(div.name);
+            //If I have a var and I want to use this var in my functions, I need to put this var outside the function
+            a.addEventListener('click', clicar);//addEventListener: Não preciso marcar no html, basta por o nome do evento, ex: ('click', clicou)
+            a.addEventListener('mouseenter', entrar);
+            a.addEventListener('mouseout', sair);
+
         function clicar() {
-            var a = document.getElementById('area'); //When using 'querySelector()' and if I use a div with id, I need to put it inside the parentheses '()' of the querySelector, if div(div#name), if class(div.name);
-            a.innerText = 'Clicou'
+           
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+            console.log('clicado')
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
         }
     </script>
 </body>
 </html>
+
