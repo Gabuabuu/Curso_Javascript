@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(7, 109, 7);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()"> <!-- Event DOM: When i put the event 'onclick' i having call a event of click. For that, i need put this event in js world(REMEMBER: Use id, class or name); -->
+        Interaja...
+    </div>
+
+    <script>
+        function clicar() {
+            var a = document.getElementById('area'); //When using 'querySelector()' and if I use a div with id, I need to put it inside the parentheses '()' of the querySelector, if div(div#name), if class(div.name);
+            a.innerHTML = 'TESTEEE'
+        }
+    </script>
+</body>
+</html>
