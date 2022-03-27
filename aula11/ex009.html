@@ -7,7 +7,7 @@
     <title>Qual seu país</title>
 </head>
 <body>
-    De qual país você é <input type="text" name="pais" id="pais">
+    <h1>De qual país você é?</h1> <input type="text" name="pais" id="pais">
     <input type="button" value="Validar" id="validar" onclick="validar()">
     <div id="res"></div>
 
@@ -18,9 +18,9 @@
                 var origem = String(pais.value)
                 
                 if(pais.value == 'brasil'){
-                    res.innerHTML = 'Parabens! Você é Brasileiro'
+                    res.innerHTML = '<p><strong>Parabens! Você é Brasileiro</strong></p>'
                 } else {
-                res.innerHTML = 'Você não é Brasileiro'
+                res.innerHTML = '<p><strong>Você não é Brasileiro</strong></p>'
                 }
         }
     </script>
