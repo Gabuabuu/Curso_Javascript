@@ -2,7 +2,7 @@
   "run": {
     "type": "file",
     "task": "project/a",
-    "file": "aula06/ex003.html",
+    "file": "aula12ex/ex014/modelo.html",
     "ignoreCurrent": true
   }
 }
