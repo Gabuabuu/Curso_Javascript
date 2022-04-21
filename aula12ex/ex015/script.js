@@ -10,6 +10,8 @@ function verificar() {
     var fsex = document.getElementsByName('radsex')
     var idade = ano - Number(fano.value)
     var genero = ''
+    var img = document.createElement('img')//Cria um elemento da minha escolha
+    img.setAttribute('id', 'foto')//seta um atributo para minha variavel
     if(fsex[0].checked)/*(fsex[0].checked) Seleciona o primeiro gênero, checked serve para selecionar a opcao selecionada*/ {
       genero = 'Homem'
     } else if (fsex[1].checked) {
