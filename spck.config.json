@@ -1,8 +1,0 @@
-{
-  "run": {
-    "type": "file",
-    "task": "project/a",
-    "file": "aula12ex/ex014/modelo.html",
-    "ignoreCurrent": true
-  }
-}
