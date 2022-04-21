@@ -29,7 +29,6 @@ function verificar() {
         }
     } else if (fsex[1].checked) {
       genero = 'Mulher'
-      nero = 'Homem'
         if (idade >= 0 && idade < 10) {
           //Criança
           img.setAttribute('src', 'foto-bebe-f.png')
