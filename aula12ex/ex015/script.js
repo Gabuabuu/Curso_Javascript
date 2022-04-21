@@ -9,6 +9,9 @@ function verificar() {
   } else {
     var fsex = document.getElementsByName('radsex')
     var idade = ano - Number(fano.value)
-    res.innerHTML = `A sua idade é ${idade}`
+    var genero = ''
+    if(fsex[0].checked)/*(fsex[0].checked) Seleciona o primeiro gênero, checked serve para selecionar a opcao selecionada*/ {
+      
+    }
   }
 }
